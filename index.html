@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Mascotas</title>
+    <style>
+        
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+     background-color: #ffffff;
+     color: rgb(7, 5, 5);
+}
+
+header{
+    background-color: lab(91.91% -52.83 81.8 / 0.897);
+    color: #000000;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+footer{
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.Conteneor{
+    padding: 2rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.Presentacion{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.Mascotas{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+.Tarjeta{
+    background-color: #5e60f34b;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.Tarjeta img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/*ESTILOS RESPONISVOS*/
+@media (min-width: 600px){ 
+    .Mascotas{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+@media (min-width: 900px){
+    .Mascotas{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Amigos Peludos</h1>
+        <p>Todo lo que necesitas saber sobre tus mascotas favoritas</p>
+    </header>
+    <main class="Contenedor">
+        <section class="Presentacion">
+            <h2>¿Por que tener una mascota?</h2>
+            <p>Las mascotas traen alegria y mejoran la salud emocional</p>
+        </section>
+        <section class="Mascotas">
+            <article class="Tarjeta">
+            <img src="https://animalpets.co/wp-content/uploads/2024/11/Diseno-sin-titulo-25.png" alt="Gato">
+            <h3>Gato</h3>
+            <p>Los gatos son animales independientes y cariñosos.</p>
+            </article>
+
+            <article class="Tarjeta">
+            <img src="https://www.zooplus.es/magazine/wp-content/uploads/2017/09/fotolia_80512914.webp" alt="Perro">
+            <h3>Perro</h3>
+            <p>los perros son leales, jugetones y exelentes compañeros para toda la familia.</p>
+            </article>
+
+            <article class="Tarjeta">
+                <img src="https://media.istockphoto.com/id/959866606/es/foto/conejo-4-meses-de-edad-sentada-sobre-fondo-blanco.jpg?s=612x612&w=0&k=20&c=Yvx7yxd2K873-lukwWfO5GSXBx9qYLxt89XDQeRUSpQ=" alt="Conejo">
+                <h3>Conejo</h3>
+                <p>los conejos son tiernos, silenciosos ymuy confiables si se les educa bien </p>
+            </article>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Amigos Peludos Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
